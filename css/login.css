@@ -1,0 +1,635 @@
+html,body{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+
+.comBody {
+    overflow: hidden;
+    height: 100%;
+}
+
+.dropdown-menuHoverLi:hover>a {
+    color: white!important;
+}
+/*登录垂直居中*/
+.error {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    margin: auto;
+}
+
+.navbar-default .navbar-nav > li > a {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-nav > li {
+    width: 10%;
+    text-align: center;
+}
+
+.navbar-collapse {
+    width: 86%;
+    float: left;
+}
+
+.navbar-brand > img {
+    width: 100%;
+}
+
+.header_log {
+    display: block;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width:1024px) {
+    .whiteBg td {
+        font-size: 12px!important;
+    }
+    /*首页搜索栏内容table*/
+    #div_searchList {
+        width: calc(76% - 10px);
+    }
+    #div_searchList ul li {
+        font-size: 12px;
+    }
+    .index_content_center {
+        left: 275px;
+        right: 255px;
+    }
+    .model-top {
+        font-size: 14px;
+    }
+    .search {
+        height: 30px;
+    }
+    .search-bnt {
+        height: 30px;
+    }
+    .describe_p {
+        font-size: 12px;
+    }
+    .compare_con {
+        float: left!important;
+        margin-top: 20px;
+    }
+
+    .he_3DFlipY  .btn {
+        font-size: 12px;
+    }
+    .seniority .btn {
+        font-size: 12px;
+    }
+    .chart_right_bot p {
+        padding: 3px;
+        line-height: 20px;
+    }
+
+    .new_list p {
+        width: 95%;
+        line-height: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.update_wrap {
+    padding: 0 5px 10px 10px;
+}
+
+.update_wrap p {
+    height: 30px;
+    line-height: 30px;
+}
+/*登录*/
+.login_bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.inputBox {
+    width: 95%;
+    border: 1px solid #c0c0c0;
+    height: 40px;
+    margin-bottom: 35px;
+}
+
+/*修改input中的字体*/
+.inputBox_input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #A2A2A2;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #A2A2A2;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #A2A2A2;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #A2A2A2;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.login_btn {
+    width: 37%;
+    height: 40px;
+    background: #B2971F;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    float: left;
+}
+
+
+
+.btn_con {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.btn_box {
+    width: 95%;
+    margin-bottom: 30px;
+}
+
+
+.btn_con p {
+    font-size: 14px;
+    height: 30px;
+    line-height: 16px;
+    color: #999999;
+}
+
+.btn_con label {
+    font-weight:400;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.tel_num {
+    bottom: 20px;
+    right: 30px;
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+    color: #999999;
+}
+/*申请试用*/
+.border_bot {
+    width: 80%;
+    border-bottom: 1px solid #ccc;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.apply_bnt {
+    width: 80%;
+    display: block;
+    height: 40px;
+    font-size: 14px;
+    background: #4c7ca5;
+    border-color: #2e6da4;
+    color: #fff;
+}
+
+.small_content {
+    width: 600px;
+    height: 560px;
+    margin: 150px auto 0;
+    background: #fff
+}
+
+.min_text {
+    height: 233px;
+    width: 84%;
+}
+
+.small-modal {
+    width: 400px;
+    height: 200px;
+    margin: 150px auto 0;
+}
+
+
+/*登录界面屏幕自适应*/
+@media screen and (max-width:1600px) {
+    .inputBox {
+        height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .btn_con {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+
+    .btn_box {
+        margin-bottom: 20px;
+    }
+
+    .tel_num {
+        font-size: 12px;
+        position: absolute;
+        right: 10px;
+        bottom: 15px;
+    }
+
+
+    .btn_con p {
+        font-size: 12px;
+    }
+    .login_btn {
+        font-size: 12px;
+        padding: 0;
+        height: 30px;
+    }
+
+}
+
+/*登录界面屏幕自适应1200以下*/
+@media screen and (max-width:1200px) {
+    .tel_num {
+        font-size: 12px;
+        bottom: 5px;
+    }
+}
+
+/*导航栏消息*/
+.remind {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+
+.newsNum {
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 14px;
+    height: 14px;
+    background-color: red;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 14px;
+}
+
+.pickUP {
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.naviconImg {
+    padding-left: 10px;
+    margin-top: -3px;
+}
+
+.rightMenu {
+    position: absolute;
+    top: -1px;
+    left: 59px;
+    z-index: 1005;
+    width: 150px;
+    display: none;
+    border: 1px solid #DCE3EB;
+    border-left: none;
+}
+
+.firstMenu {
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    display: none;
+}
+
+.secondMenu {
+    border-left: 1px solid #DCE3EB;
+}
+
+.new-dropdown-toggle {
+    display: block
+}
+.new-dropdown-menu {
+    border-left: 1px solid #DCE3EB;
+}
+.feedMargin {
+    margin: 120px auto;
+}
+@media screen and (max-width:1601px) {
+    .feedMargin {
+        margin: 70px auto;
+    }
+}
+@media screen and (max-width:1367px) {
+    .feedMargin {
+        margin: 70px auto;
+    }
+}
+.feedImg {
+    width:26px;
+    height:16px;
+}
+
+
+/*改版登录页*/
+.login-banner {
+    background: url('../images/login-bg.jpg') no-repeat center;
+    background-size: cover;
+}
+.user-tit {
+    font-size: 24px;
+    margin: 36% 72px 0 72px;
+    color: #2c50a9;
+}
+
+.loginTabs {
+    padding: 10% 72px 0 72px;
+}
+
+.loginActive {
+    color: #2c50a9;
+    border-bottom: 1px solid #2c50a9!important;
+}
+.userNameimg {
+    width: 48px;
+    height: 100%;
+    background: #f5f6fa;
+    border-right: 1px solid #dedede;
+    border-radius: 8px 0 0 8px;
+}
+.userimg1 {
+    background: url('../images/icon003.png') no-repeat center;
+    background-size: auto;
+}
+.userimg2 {
+    background: url('../images/icon002.png') no-repeat center;
+    background-size: auto;
+}
+.forgetnum {
+    color: #2c50a9;
+}
+.inputBoximg{
+    display: block;
+    margin: 12px auto;
+}
+.inputBox {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    height: 48px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.inputBox_input {
+    font-size: 16px;
+    padding-left: 15px;
+    height: 100%;
+    width: calc(100% - 66px);
+}
+.btn_box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login_btn {
+    display: block;
+    width: 98%;
+    height: 40px;
+    background: #2c50a9;
+    margin: 10% auto 0;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+}
+.tel_num {
+    bottom: 30px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+}
+.login-title{
+    font-size: 32px;
+    padding: 37px 70px;
+    color:#fff;
+}
+.login-info{
+    color: #fff;
+    margin: 45% 0 0 80px;
+    position: absolute;
+    bottom: 50px;
+    left:80px;
+}
+.login-infoname {
+    font-size: 28px!important;
+    line-height: 78px!important;
+}
+.Line {
+    display: block;
+    width: 62px;
+    height: 2px;
+    background: #fff;
+}
+.login-info p {
+    font-size: 26px;
+    line-height: 50px;
+}
+.login-info p span {
+    font-size: 35px;
+    color: #f3e311;
+}
+.Ontrialbtn {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #2c50a9;
+    line-height: 40px;
+    border-radius: 8px;
+    margin-top: 35%;
+    cursor: pointer;
+    color: #2c50a9;
+}
+.Ontrialbtn:hover {
+    color: #fff;
+    background: #2c50a9;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .login-banner {
+        width: 53%;
+    }
+
+    .login-right {
+        width: 30%
+    }
+
+    .login-title {
+        font-size: 22px;
+        padding: 37px 30px;
+    }
+
+    .login-info {
+        margin: 10% 0 0 30px;
+    }
+    .tel_num {
+        bottom: 10px;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1400px){
+    .login-banner {
+        width: 75%;
+    }
+
+    .login-right {
+        width: 25%
+    }
+    .inputBox {
+        margin-bottom: 20px;
+    }
+    .Ontrialbtn {
+        margin-top: 15%;
+    }
+    .inputBox {
+        height: 40px;
+    }
+    .userNameimg {
+        width: 40px;
+    }
+    .inputBoximg {
+        margin: 7px auto;
+    }
+}
+
+.nextBtnbox{
+    padding: 0 40px;
+}
+.Retrieve {
+    background: #2c50a9;
+}
+.nextBtn {
+    display: block;
+    width: 350px;
+    height: 48px;
+    background: #2c50a9;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+
+/***************私募排名、热门产品、热门公司*****************/
+.homeTab {
+    float: left;
+    width: 33.3%;
+    line-height: 30px;
+    background: #DDDFE4;
+    cursor: pointer;
+    text-align: center;
+}
+.homeTabActive {
+    background: #fff;
+}
+.table-bordered {
+    border: none;
+}
+.bot_table, .hisTable_head {
+    display: block;
+    width: 100%;
+}
+.comTable > thead > tr {
+    background: #E1EEFB;
+    display: block;
+    width: 100%;
+}
+.comTable >tbody>tr {
+    border-top: 1px solid #dcdcef;
+}
+.tb_width tbody tr td:not(:first-child) {
+    text-align: left;
+}
+.comTable>thead>tr>th:first-child {
+    text-align: center;
+}
+.comTable>tbody>tr>td:first-child {
+    text-align: center;
+}
+.comTable > thead> tr>th:nth-child(1) {
+    width: 10%;
+}
+.comTable > thead> tr>th:nth-child(2) {
+    width: 50%;
+}
+.comTable > thead> tr>th:nth-child(3) {
+    width: 19%;
+}
+.bot_table>tr>td:nth-child(1) {
+    width: 15%;
+}
+.bot_table> tr>td:nth-child(2) {
+    width: 50%;
+}
+.bot_table> tr>td:nth-child(3) {
+    width: 8%;
+}
+.bot_table {
+    overflow: auto;
+}
+.right_topdiv {
+    color: #fff;
+}
+.num_div {
+    width: 85px;
+    height: 85px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 100%;
+    background: #d4ce20;
+    line-height: 85px;
+}
+.num_span_sty {
+    color: #d4ce20;
+    font-size: 20px;
+}
+.homeOver {
+    display: block;
+    width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+.rightPadd {
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+

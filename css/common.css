@@ -1,0 +1,67 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.height100 {
+    height: 100%;
+}
+
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+
+
+input {
+    background:transparent;
+    outline: none!important;
+    border: none;
+}
+/*滚动条部分开始**/
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    border: 1px solid #d4d4d4;
+    background-color: #E5E5E5;
+    border-top: none;
+    border-bottom: none;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 1px solid #d4d4d4;
+    background-color: #fff;
+}
+/*滚动条的上下两端的按钮*/
+::-webkit-scrollbar-button:vertical:start {
+    background: url("../images/allScrollbar.png") no-repeat 3px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-button:vertical:end {
+    background: url("../images/allScrollbar.png") no-repeat -12px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-button:horizontal:start {
+    background: url("../images/allScrollbar.png") no-repeat -28px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-button:horizontal:end {
+    background: url("../images/allScrollbar.png") no-repeat -42px;
+    cursor: pointer;
+}
+/*滚动条部分结束**/
+

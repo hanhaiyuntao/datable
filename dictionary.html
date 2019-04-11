@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字典表 | 川谷数据字典</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/dictionary.css">
+</head>
+<body>
+<div class="container">
+    <!--导航-->
+    <div class="collapse navbar-collapse navbar-form" id="nav">
+        <span><img class="logo" src="images/logo.png" alt=""></span>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="">当前用户:</a>
+            </li>
+            <li>
+                <a id="UserName">谭福超</a>
+            </li>
+            <li>
+                <a id="today">xxxx-xx-xx</a>
+            </li>
+            <li>
+                <a id="loginOut">注销</a>
+            </li>
+        </ul>
+    </div>
+    <!--内容部分-->
+    <div class="row" id="row">
+        <!--左侧z-tree-->
+        <div id="list_left" class="col-md-2 pre-scrollable">
+            <div class="list_wrap">
+                <p class="lead">数据列表</p>
+                <div class="csOne">
+                    ztree占位符
+                </div>
+            </div>
+        </div>
+        <!--右侧表格容器-->
+        <div id="list_right" class="col-md-10 pre-scrollable">
+            <div class="sumTable">
+                <div class="tableWrap">
+                    <table class="table table-bordered table-hover table-striped text-center" id="event_table"  >
+                        <thead>
+                        </thead>
+                    </table>
+                </div>
+                <div class="tableWrap">
+                    <table class="table table-bordered table-hover table-striped text-center" id="event_table2"  >
+                        <thead>
+                        </thead>
+                    </table>
+                </div>
+                <!--测试高度占位符   直接删除就行-->
+                <div class="csHeight">
+
+                </div>
+                <!--说明部分-->
+                <div class>
+                    <div class="dicTitle">备注说明</div>
+                    <!--说明锚点跳转-->
+                    <ul id="sumAnchor">
+                        <li class="clearfix anchorli" id="anchor1">
+                            <a href="#reverseAnchor1">[ 注1 ]:</a><!--此处href属性值也需要传下标,反向跳转-->
+                            <p>
+                                基金主代码（MainCode）：与“证券主表（SecuMain）”中的“证券代码（SecuCode）”关联，得到基金的交易简称等信息。该字段记录基金季报中公布的基金主代码信息，当基金为非分级基金或分级基金主代码时，该字段与基金交易代码（交易所交易代码）（SecurityCode）一致。
+                            </p>
+                        </li>
+                        <li class="clearfix anchorli" id="anchor2">
+                            <a href="#reverseAnchor1">[ 注2 ]:</a><!--此处href属性值也需要传下标,反向跳转-->
+                            <p>
+                                基金主代码（MainCode）：与“证券主表（SecuMain）”中的“证券代码（SecuCode）”关联，得到基金的交易简称等信息。该字段记录基金季报中公布的基金主代码信息，当基金为非分级基金或分级基金主代码时，该字段与基金交易代码（交易所交易代码）（SecurityCode）一致。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="introWrap">
+                <p class="navTitle">川谷金融数据字典</p>
+                <p class="introWord">
+                    恒生聚源基础数据库以金融证券为核心，数据内容涵盖股票、CDR、基金、债券、期货、现货、外汇、期权、指数、港股、理财、宏观、行业、公告、新闻资讯、研报、法律法规、海外经济数据等。并从公司概况、股本结构、融资分红、资本运作、财务等多维度阐述上市公司与发债主体。公告与研报类数据，除了保留原始文件，还设计成结构化的数据，方便统计与分析。财务报表全面收录自深交所和上交所成立以来的财务报表会计科目历史数据，分成旧会计与新会计准则，非金融与金融类。还收录保险，银行，券商等特有财务指标。为财经类企业、金融机构和学术研究机构提供财经信息服务及数据中心解决方案。聚源数据库将专业知识同创新技术结合，立足于准确及时的金融证券信息，不断向新的领域、新的产品和新的服务战略等方面拓展。
+                </p>
+                <img src="images/logo.png" class="framework" alt="">
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min3.0.js"></script>
+<script src="js/jquery.dataTables.js"></script>
+<script src="js/dataTables.bootstrap.js"></script>
+<script src="js/dictionary.js"></script>
+<script>
+    var columns=[
+        {title:"编号"},
+        {title:"来源"},
+        {title:"客户名称"},
+        {title:"故障主题"},
+    ]
+    var dataSet=[
+        ['20180703001','监控发现','云惠','0'],
+        ['20180703002','故障申报','新世纪','1'],
+        ['20180703003','故障申报','新世纪','2'],
+    ]
+    $('#event_table').DataTable( {
+        data: dataSet,
+        columns: columns,
+        "columnDefs" : [ {
+            "targets" : 3,//操作按钮目标列
+            "data" : null,
+            "render" : function(data, type,row){
+                var html = "<a href='#anchor1' id='reverseAnchor1'>锚链接1</a>"//此处设为下标传值,第二个id为反向锚点
+                return html;
+            }
+        } ],
+
+        "info":false,//是否显示左下角信息
+        "paging":false,//是否开启本地分页
+        "processing":true,//是否显示加载中状态
+        "searching":false,//是否开启本地搜索
+
+    } );
+    $('#event_table2').DataTable( {
+        data: dataSet,
+        columns: columns,
+        "columnDefs" : [ {
+            "targets" : 3,//操作按钮目标列
+            "data" : null,
+            "render" : function(data, type,row){
+                var html = "<a href='#anchor1' id='reverseAnchor1'>锚链接1</a>"//此处设为下标传值,第二个id为反向锚点
+                return html;
+            }
+        } ],
+        "info":false,//是否显示左下角信息
+        "paging":false,//是否开启本地分页
+        "processing":true,//是否显示加载中状态
+        "searching":false,//是否开启本地搜索
+
+    } );
+    //点击数据列表,字典介绍异常
+    $("#list_left").click(function(){
+        $(".introWrap").css("display","none");
+    });
+
+
+</script>
+</body>
+</html>
